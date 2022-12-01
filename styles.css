@@ -87,6 +87,7 @@ body {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);  
   animation-name: openModal;
   animation-duration: 1s;
+  
 }
 
 .closeBtn {
@@ -104,12 +105,20 @@ body {
 
 .message {
     text-align: center;
+    padding: 1rem;
     max-width: 90%;
     font-weight: 600;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.8);
 }
-
+.selected {
+    background-color: rgb(140, 11, 11);
+    opacity: .5;
+    color: white;
+}
+.selected:hover {
+    color:rgb(177, 174, 174);
+}
 @media screen and (max-width: 600px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
@@ -120,3 +129,4 @@ body {
         width: 65px;
     }
 };
+
